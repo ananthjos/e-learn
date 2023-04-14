@@ -1,0 +1,39 @@
+.step {
+  margin: 50px auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.step-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.step-text p {
+  margin-bottom: 20px;
+}
+
+.step-media {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-video {
+  margin-bottom: 20px;
+}
+
+.step-article {
+  margin-top: auto;
+}

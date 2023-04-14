@@ -5,19 +5,25 @@ import {
   NavLink,
   useNavigate,
   useParams,
+  useOutletContext,
 } from "react-router-dom";
 import "../Styles/step.css";
 
-const Step = ({ step, setStepStatus }) => {
-  const { stepIndex } = useParams();
+// const Step = ({ step, setStepStatus }) => {
+const Step = () => {
+  // const { stepIndex } = useParams();
 
-  const handleCompleteStep = () => {
-    setStepStatus(stepIndex - 1, true);
-  };
+  const params = useParams();
+  let navigate = useNavigate();
+  // const handleCompleteStep = () => {
+  //   setStepStatus(stepIndex - 1, true);
+  // };
+
+  const handleClick = () => {};
 
   return (
     <div className='step'>
-      <h2 className='step-title'>{step.title}</h2>
+      {/* <h2 className='step-title'>{step.title}</h2>
       <div className='step-content'>
         <div className='step-text'>
           <p>{step.content}</p>
@@ -40,7 +46,11 @@ const Step = ({ step, setStepStatus }) => {
           Read the article
         </a>
       </div>
-      <button onClick={handleCompleteStep}>Complete Step</button>
+      <button onClick={handleCompleteStep}>Complete Step</button> */}
+      <h1>{useParams.stepId}</h1>
+      <h1>Step Component</h1>
+      <button onClick={() => navigate(1)}>Next Step</button>
+      <button onClick={() => navigate(-1)}>Previous Step</button>
     </div>
   );
 };

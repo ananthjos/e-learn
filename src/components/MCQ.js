@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Container, Form } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 const questions = [
   {
@@ -73,7 +73,7 @@ const Quiz = () => {
           </div>
           <div className='answer-section'>
             {questions[currentQuestion].options.map((option, index) => (
-              <section id={`${index}app`} className='m-2'>
+              <section key={`${index}app`} className='m-2'>
                 <button
                   variant='primary'
                   onClick={() => handleAnswerOptionClick(option)}

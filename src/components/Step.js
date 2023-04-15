@@ -14,9 +14,9 @@ const Step = () => {
     <div className='step'>
       <section>
         <p>{currentStep?.content?.intro}</p>
-        {currentStep.content?.description.map((obj) => {
+        {currentStep.content?.description.map((obj, index) => {
           return (
-            <section>
+            <section key={`${index}xfg`}>
               <h6>{obj.heading}</h6>
               <p>{obj.topic}</p>
             </section>

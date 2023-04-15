@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import "../styles/sidebar.css";
-import stepContext from "../context/step-context";
+import { stepContext } from "../context";
 
 const SideBar = ({ steps }) => {
   const [selectedItemIndex, setSelectedItemIndex] = useState(0);

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Steps, Step, About, Layout, Courses } from "./components";
-import stepContext from "./context/step-context";
+import { stepContext } from "./context";
 import { getSteps } from "./services";
 
 import "./App.css";

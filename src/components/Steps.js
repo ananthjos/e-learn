@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Outlet } from "react-router-dom";
-import stepContext from "../context/step-context";
+import { stepContext } from "../context";
 import SideBar from "./SideBar";
 import "../styles/sidebar.css";
 

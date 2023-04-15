@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "../styles/step.css";
-import stepContext from "../context/step-context";
+import { stepContext } from "../context";
 import MCQ from "./MCQ";
 import { useContext } from "react";
 import Video from "./Video";

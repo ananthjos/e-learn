@@ -22,25 +22,12 @@
   color: black;
 }
 
-/* Active/current link */
-/* .sidebar a.active {
-  background-color: #04aa6d;
-  color: white;
-}
-
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-  /* background-color: #555;
-  color: white; */
-}
-
 .selected {
   background-color: #04aa6d;
   display: block;
   color: black;
   text-decoration: none;
 }
-*/
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {

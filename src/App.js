@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Steps, Step, About, Layout, Courses } from "./components";
-import StepContext from "./context/step-context";
+import stepContext from "./context/step-context";
 import { getSteps } from "./services";
 
 import "./App.css";
@@ -18,7 +18,7 @@ const App = () => {
   }, []);
 
   return (
-    <StepContext.Provider
+    <stepContext.Provider
       value={{
         allSteps: [steps, setSteps],
         selectedStep: [currentStep, setCurrentStep],
@@ -35,7 +35,7 @@ const App = () => {
           </Route>
         </Routes>
       </BrowserRouter>
-    </StepContext.Provider>
+    </stepContext.Provider>
   );
 };
 

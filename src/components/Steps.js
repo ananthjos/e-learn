@@ -1,15 +1,16 @@
 import React, { useContext } from "react";
 import { Outlet } from "react-router-dom";
-import StepContext from "../Context/step-context";
+import StepContext from "../context/step-context";
 import SideBar from "./SideBar";
-import "../Styles/sidebar.css";
+import "../styles/sidebar.css";
 
 const Steps = () => {
-  const steps = useContext(StepContext);
+  const { allSteps } = useContext(StepContext);
+  const [steps] = allSteps;
+
   return (
     <div>
       <>
-        <h1>Course Steps</h1>
         <SideBar steps={steps} />
       </>
       <Outlet />

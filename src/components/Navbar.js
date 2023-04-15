@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../Styles/navbar.css";
+import "../styles/navbar.css";
 
 const Navbar = () => {
   return (
     <div>
-      <nav className='navbar  navbar-expand-lg navbar-light bg-navbar'>
-        <a className='navbar-brand' href='#'>
-          Navbar
-        </a>
+      <nav className='navbar  sticky-top navbar-expand-lg navbar-light bg-navbar'>
+        <Link className='navbar-brand' href='/'>
+          E-learning
+        </Link>
         <button
           className='navbar-toggler'
           type='button'
@@ -25,7 +25,7 @@ const Navbar = () => {
             <Link className='nav-link active' to='/'>
               Home <span className='sr-only'>(current)</span>
             </Link>
-            <Link className='nav-link' to='/about'>
+            <Link className='nav-link active' to='/about'>
               About
             </Link>
           </div>

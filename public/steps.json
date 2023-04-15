@@ -1,31 +1,103 @@
 [
   {
+    "id": 1,
     "title": "Step 1",
-    "content": "Welcome to the ReactJS Framework course! In this first step, we will introduce the basics of ReactJS, including its features and how it works. Here is a video tutorial to get started:",
+    "content": {
+      "intro": "Welcome to the ReactJS Framework course! In this first step, we will introduce the basics of ReactJS, including its features and how it works. Here is a video tutorial to get started:",
+      "description": [
+        {
+          "heading": "What is React?",
+          "topic": "React, sometimes referred to as a frontend JavaScript framework, is a JavaScript library created by Facebook.React is a tool for building UI components."
+        },
+        {
+          "heading": "How does React Work?",
+          "topic": "React creates a VIRTUAL DOM in memory.Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM.React only changes what needs to be changed!React finds out what changes have been made, and changes only what needs to be changed.You will learn the various aspects of how React does this in the rest of this tutorial."
+        },
+        {
+          "heading": "React.JS History",
+          "topic": "Current version of React.JS is V18.0.0 (April 2022).Initial Release to the Public (V0.3.0) was in July 2013.React.JS was first used in 2011 for Facebook's Newsfeed feature.Facebook Software Engineer, Jordan Walke, created it.Current version of create-react-app is v5.0.1 (April 2022).create-react-app includes built tools such as webpack, Babel, and ESLint."
+        }
+      ]
+    },
     "videoUrl": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
     "articleUrl": "https://reactjs.org/docs/hello-world.html"
   },
   {
+    "id": 2,
     "title": "Step 2",
-    "content": "In this step, we will learn how to create React components, which are the building blocks of a React app. Here is a video tutorial to get started:",
+    "content": {
+      "intro": "In this step, we will learn how to create React components, which are the building blocks of a React app. Here is a video tutorial to get started:",
+      "description": [
+        {
+          "heading": "React Components",
+          "topic": "Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.Components come in two types, Class components and Function components, in this tutorial we will concentrate on Function components.In older React code bases, you may find Class components primarily used. It is now suggested to use Function components along with Hooks, which were added in React 16.8. There is an optional section on Class components for your reference."
+        },
+        {
+          "heading": "Create Your First Component",
+          "topic": "When creating a React component, the component's name MUST start with an upper case letter.A class component must include the extends React.Component statement. This statement creates an inheritance to React.Component, and gives your component access to React.Component's functions.The component also requires a render() method, this method returns HTML."
+        },
+        {
+          "heading": "Function Component",
+          "topic": "Here is the same example as above, but created using a Function component instead.A Function component also returns HTML, and behaves much the same way as a Class component, but Function components can be written using much less code, are easier to understand, and will be preferred in this tutorial."
+        }
+      ]
+    },
     "videoUrl": "https://www.youtube.com/watch?v=I6ypD7qv3Z8",
     "articleUrl": "https://reactjs.org/docs/components-and-props.html"
   },
   {
+    "id": 3,
     "title": "Step 3",
-    "content": "In this step, we will learn how to manage state in a React app using React hooks. Here is a video tutorial to get started:",
+    "content": {
+      "intro": "In this step, we will learn how to manage state in a React app using React hooks. Here is a video tutorial to get started:",
+      "description": [
+        {
+          "heading": "What is a Hook?",
+          "topic": "Hooks allow us to hook into React features such as state and lifecycle methods.You must import Hooks from react.Here we are using the useState Hook to keep track of the application state.State generally refers to application data or properties that need to be tracked."
+        },
+        {
+          "heading": "Hook Rules",
+          "topic": "There are 3 rules for hooks:Hooks can only be called inside React function components.Hooks can only be called at the top level of a component.Hooks cannot be conditional"
+        },
+        {
+          "heading": "use State Hook",
+          "topic": "The React useState Hook allows us to track state in a function component.State generally refers to data or properties that need to be tracking in an application.We initialize our state by calling useState in our function component.useState accepts an initial state and returns two values:The current state.A function that updates the state."
+        }
+      ]
+    },
     "videoUrl": "https://www.youtube.com/watch?v=O6P86uwfdR0",
     "articleUrl": "https://reactjs.org/docs/hooks-state.html"
   },
   {
+    "id": 4,
     "title": "Step 4",
-    "content": "In this step, we will learn how to handle user input and events in a React app. Here is a video tutorial to get started:",
+    "content": {
+      "intro": "In this step, we will learn how to handle user input and events in a React app. Here is a video tutorial to get started:",
+      "description": [
+        {
+          "heading": "Adding Events",
+          "topic": "React events are written in camelCase syntax:onClick instead of onclick.React event handlers are written inside curly braces:onClic{shoot }  instead of onClick=shoot()."
+        },
+        {
+          "heading": "React Props",
+          "topic": "React Props are like function arguments in JavaScript and attributes in HTML.To send props into a component, use the same syntax as HTML attributes:"
+        },
+        {
+          "heading": "Memo",
+          "topic": "Using memo will cause React to skip rendering a component if its props have not changed.This can improve performance."
+        }
+      ]
+    },
     "videoUrl": "https://www.youtube.com/watch?v=dGcsHMXbSOA",
     "articleUrl": "https://reactjs.org/docs/handling-events.html"
   },
   {
+    "id": 5,
     "title": "Step 5",
-    "content": "In this final step, we will learn how to deploy a React app to production. Here is a video tutorial to get started:",
+    "content": {
+      "intro": "In this final step, we will learn how to deploy a React app to production. Here is a video tutorial to get started:",
+      "description": []
+    },
     "videoUrl": "https://www.youtube.com/watch?v=5y1kOZJAZ-Q",
     "articleUrl": "https://create-react-app.dev/docs/deployment/"
   }

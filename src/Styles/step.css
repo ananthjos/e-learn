@@ -3,6 +3,8 @@
   max-width: 800px;
   display: flex;
   flex-direction: column;
+  /* font-size: 12px; */
+  margin-top: 50px !important;
 }
 
 .step-title {

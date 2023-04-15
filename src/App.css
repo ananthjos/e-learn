@@ -107,3 +107,7 @@
   border-radius: 10px;
   transition: width 0.5s;
 }
+
+.btn-custom {
+  background-color: #04aa6d !important;
+}
